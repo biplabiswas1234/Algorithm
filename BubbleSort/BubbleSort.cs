@@ -67,6 +67,32 @@ namespace BubbleSort
                 Console.WriteLine("Both the strings are not Anagrams");
             }
         }
+        public void Prime()
+        {
+            bool isPrime = true;
+            int i, j;
+            //Calculate and display the Prime number  
+            Console.WriteLine("Enter number upto you want\n");
+            int Num = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Prime Numbers are : ");
+            for (i = 2; i <= Num; i++)
+            {
+                for (j = 2; j <= i/2; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
+                }
+                if (isPrime)
+                {
+                    Console.Write(i +" ");
+                }
+                isPrime = true;
+            }
+            Console.ReadKey();
+        }
     }
 }
 

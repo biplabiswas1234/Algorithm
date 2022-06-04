@@ -11,6 +11,7 @@ namespace BubbleSort
             BubbleSorting obj = new BubbleSorting();
             obj.BubbleSort();
             obj.Anagram();
+            obj.Prime();
         }
     }
 }
